@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技展览 - 圆周率在环保科技中的应用</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* 标题样式 */
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #1e5799 0%, #207cca 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* 内容容器 */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        /* 展览项目样式 */
+        .exhibit {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .exhibit:hover {
+            transform: translateY(-5px);
+        }
+        
+        .exhibit-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .exhibit-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .exhibit-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 2rem;
+        }
+        
+        .exhibit-title {
+            font-size: 1.5rem;
+            color: #1e5799;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        
+        .exhibit-text {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .pi-highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            background-color: #2c3e50;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav-links li {
+            margin: 0 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .exhibit {
+                flex-direction: column;
+            }
+            
+            .exhibit-image {
+                order: 1;
+            }
+            
+            .exhibit-content {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 标题部分 -->
+    <header class="header">
+        <h1>科技展览 - 圆周率在环保科技中的应用</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/index.html">首页</a></li>
+            <li><a href="/nav1.html">科技展览</a></li>
+        </ul>
+    </nav>
+    
+    <!-- 内容容器 -->
+    <div class="container">
+        <!-- 展览项目1：生态建模 -->
+        <div class="exhibit">
+            <div class="exhibit-image">
+                <img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="圆形湿地生态建模">
+            </div>
+            <div class="exhibit-content">
+                <h2 class="exhibit-title">圆周率在生态建模中的应用</h2>
+                <p class="exhibit-text">
+                    在生态保护领域，<span class="pi-highlight">圆周率(π)</span>在圆形湿地面积计算中发挥着关键作用。通过公式 A=πr²，环保科学家可以精确计算圆形湿地的表面积，这对评估湿地生态容量、规划保护区域至关重要。
+                    <br><br>
+                    例如，一个半径为50米的圆形湿地，其面积为 π×50²≈7854平方米。这种精确计算帮助生态学家确定湿地能支持多少动植物物种，以及它能净化多少水量，为生态保护提供科学依据。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 展览项目2：风力发电 -->
+        <div class="exhibit">
+            <div class="exhibit-image">
+                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="风力发电叶片设计">
+            </div>
+            <div class="exhibit-content">
+                <h2 class="exhibit-title">圆周率在风力发电中的应用</h2>
+                <p class="exhibit-text">
+                    在绿色能源领域，<span class="pi-highlight">圆周率(π)</span>对风力发电机叶片设计至关重要。叶片尖端速度与发电效率直接相关，而计算这个速度需要知道叶片旋转的周长(C=πd)。
+                    <br><br>
+                    假设叶片长度为40米(直径80米)，旋转一周的周长就是 π×80≈251米。如果叶片每分钟旋转15圈，那么尖端速度就是251×15=3765米/分钟，约62.75米/秒。工程师利用这些计算优化叶片设计，在保证结构安全的同时最大化发电效率，推动清洁能源发展。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 展览项目3：环保知识 -->
+        <div class="exhibit">
+            <div class="exhibit-image">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="环保科技">
+            </div>
+            <div class="exhibit-content">
+                <h2 class="exhibit-title">数学与环保科学的融合</h2>
+                <p class="exhibit-text">
+                    数学常数如<span class="pi-highlight">圆周率(π)</span>在环保科技中有着广泛应用。从计算太阳能板的理想弧度以最大化阳光吸收，到设计污水处理系统中的圆形沉淀池，π帮助科学家和工程师创建更高效的环保解决方案。
+                    <br><br>
+                    在气候变化研究中，π还被用于计算地球表面积、大气层体积等关键参数。这些计算帮助我们更好地理解全球变暖的影响，并开发应对策略。数学与环保科学的融合，正在为解决地球环境问题提供精确的工具和方法。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

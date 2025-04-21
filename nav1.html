@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园环保科技成果展</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* 容器样式 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 标题样式 */
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* 展示项样式 */
+        .exhibit {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .exhibit:hover {
+            transform: translateY(-5px);
+        }
+        
+        .exhibit-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .exhibit-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .exhibit-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .exhibit-title {
+            font-size: 1.8rem;
+            color: #2E7D32;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        
+        .exhibit-description {
+            font-size: 1.1rem;
+            color: #424242;
+            line-height: 1.8;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            background-color: #2c3e50;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav-links li {
+            margin: 0 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .exhibit {
+                flex-direction: column;
+            }
+            
+            .exhibit-image {
+                order: 1;
+            }
+            
+            .exhibit-content {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 标题部分 -->
+    <header class="header">
+        <div class="container">
+            <h1>校园环保科技成果展</h1>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/index.html">首页</a></li>
+            <li><a href="/nav2.html">绿色课堂</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- 展示项1 -->
+        <div class="exhibit">
+            <div class="exhibit-image">
+                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="太阳能发电系统">
+            </div>
+            <div class="exhibit-content">
+                <h2 class="exhibit-title">智能太阳能发电系统</h2>
+                <p class="exhibit-description">
+                    我校工程系学生研发的智能太阳能发电系统，采用高效光伏板和智能追踪技术，能自动调整角度以最大化吸收太阳能。系统配备了储能装置和智能管理系统，可为校园路灯和部分教学楼供电，年减排二氧化碳约15吨。该项目获得了全国大学生科技创新大赛环保组一等奖。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 展示项2 -->
+        <div class="exhibit">
+            <div class="exhibit-content">
+                <h2 class="exhibit-title">雨水回收灌溉系统</h2>
+                <p class="exhibit-description">
+                    由环境科学学院开发的雨水回收灌溉系统，通过收集屋顶和地面的雨水，经过简单过滤后用于校园绿化灌溉。系统采用物联网技术实现自动监测和控制，根据土壤湿度和天气预报智能调节灌溉量。项目实施后，校园绿化用水量减少了60%，每年节约用水约2000吨。
+                </p>
+            </div>
+            <div class="exhibit-image">
+                <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="雨水回收系统">
+            </div>
+        </div>
+        
+        <!-- 展示项3 -->
+        <div class="exhibit">
+            <div class="exhibit-image">
+                <img src="/img/04.jpeg" alt="垃圾分类机器人">
+            </div>
+            <div class="exhibit-content">
+                <h2 class="exhibit-title">AI垃圾分类机器人</h2>
+                <p class="exhibit-description">
+                    计算机学院与机械工程学院联合研发的AI垃圾分类机器人，利用深度学习技术识别垃圾种类，并自动分拣到相应回收箱。机器人配备了视觉识别系统和机械臂，识别准确率达到95%以上。目前已在校园食堂和宿舍区试点使用，大大提高了垃圾分类的效率和准确率，减少了人工分类的工作量。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
